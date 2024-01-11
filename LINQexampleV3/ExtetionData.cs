@@ -7,9 +7,6 @@ using System.Threading.Tasks;
 
 namespace LINQexampleV3
 {
-    internal class ExtetionData
-    {
-    }
     public class Employee
     {
         public int Id { get; set; }
