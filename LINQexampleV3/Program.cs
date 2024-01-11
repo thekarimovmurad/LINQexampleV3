@@ -45,7 +45,31 @@ List<Department> departmentList = Data.GetDepartments();
 //}
 #endregion
 
+#region Grouping Operation
+////Groupby
+//var groupResult = from emp in employeeList
+//                  orderby emp.DepartmentId
+//                  group emp by emp.DepartmentId;
+//foreach (var empGroup in groupResult)
+//{
+//    Console.WriteLine($"Department Id: {empGroup.Key}");
+//    foreach (Employee emp in empGroup)
+//    {
+//        Console.WriteLine($"\tEmployee Fullname: {emp.FirstName} {emp.LastName}");
+//    }
+//}
 
+////ToLookup
+//var groupResult = employeeList.OrderBy(o =>o.DepartmentId).ToLookup(e => e.DepartmentId);
+//foreach (var empGroup in groupResult)
+//{
+//    Console.WriteLine($"Department Id: {empGroup.Key}");
+//    foreach (Employee emp in empGroup)
+//    {
+//        Console.WriteLine($"\tEmployee Fullname: {emp.FirstName} {emp.LastName}");
+//    }
+//}
+#endregion
 
 
 Console.ReadKey();
